@@ -54,7 +54,8 @@
     &.step-done .checkout-step-label {
       color: $brand-success;
     }
-    &.step-done .checkout-step-bar-left, &.step-done .checkout-step-bar-right {
+    &.step-done .checkout-step-bar-left,
+    &.step-done .checkout-step-bar-right {
       background: $brand-success;
     }
 
@@ -74,13 +75,17 @@
       background: transparent;
     }
 
-    &:hover, &:active {
+    &:hover,
+    &:active {
       text-decoration: none;
     }
   }
 }
-@media(max-width: $screen-sm-max) {
+@media (max-width: $screen-sm-max) {
   .checkout-step-label {
     display: none;
   }
+}
+#questions_group > .panel-default:first-child {
+  display: none;
 }
